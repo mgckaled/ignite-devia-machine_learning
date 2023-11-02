@@ -52,25 +52,25 @@ Machine Learning é aplicado em uma ampla gama de campos e domínios, incluindo 
 - **Supervisinado**: Modelos são treinado usando um conjunto de dados rotulado, aprendendo a mapear entradas e saídas esperadas.
 
 <div>
-  <img alt="logo trilha" src="../assets/images/m5_1.png" width="70%"/>
+  <img src="../assets/images/m5_1.png" width="70%"/>
 </div>
 
 - **Não Supervisionado**: Modelos exploram dados não rotulados para identificar padrões ou estruturas subjacentes, como agrupamentos, associações ou redução de dimensionalidade.
 
 <div>
-  <img alt="logo trilha" src="../assets/images/m5_2.png" width="70%"/>
+  <img src="../assets/images/m5_2.png" width="70%"/>
 </div>
 
 - **Semi Supervisionado**: Combina dados rotulados e não rotulados para melhorar o desenpenho o modelo, geralmente utilizando a estrutura não rotulada para aprimorar o aprendizado supervisionado.
 
 <div>
-  <img alt="logo trilha" src="../assets/images/m5_3.png" width="70%"/>
+  <img src="../assets/images/m5_3.png" width="70%"/>
 </div>
 
 - **Por Reforço**: Agentes aprendem a tomar ações em um ambiente para maximizar algum tipo de recompensa acumulativa, através de tentativa e erro.
 
 <div>
-  <img alt="logo trilha" src="../assets/images/m5_4.png" width="70%"/>
+  <img src="../assets/images/m5_4.png" width="70%"/>
 </div>
 
 ### ChatGPT 3.5
@@ -105,7 +105,7 @@ Além desses três tipos principais, existem outras abordagens e técnicas de ap
 ### Material
 
 <div>
-  <img alt="logo trilha" src="../assets/images/m5_5.png" width="70%"/>
+  <img src="../assets/images/m5_5.png" width="70%"/>
 </div>
 
 <br>
@@ -113,7 +113,7 @@ Além desses três tipos principais, existem outras abordagens e técnicas de ap
 - **Modelo `scikit-learn`:** Divisão de quatro classes de algorímitmos
 
 <div>
-  <img alt="logo trilha" src="../assets/images/m5_6.png" width="70%"/>
+  <img src="../assets/images/m5_6.png" width="70%"/>
 </div>
 
 ### ChatGPT 3.5

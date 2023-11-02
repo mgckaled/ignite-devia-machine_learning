@@ -10,4 +10,6 @@
 
 ### Módulo 6: Meu primeiro modelo com Scikit-Learn
 
+- [Conceitos, dicas e anotações importantes](./d_my-first-model.md)
+
 > Voltar para o [README](../../README.md)

@@ -30,4 +30,4 @@
 
 > [voltar](#sumário) para o topo.
 >
-> [voltar](./notes.md) a página anterior.
+> [voltar](./notes.md) para página anterior.

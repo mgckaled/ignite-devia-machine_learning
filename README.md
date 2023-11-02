@@ -2,8 +2,18 @@
 
 # Ignite Trilha Desenvovimento de IA - Aprendizado de Máquina
 
-<div>
+<div align="center">
    <img alt="logo trilha" src=".github/assets/trilha-rs.png" width="30%"/>
+</div>
+
+<br>
+
+<div align="center">
+   <a href="https://github.com/mgckaled">
+      <img alt="Made by mgckaled" src="https://img.shields.io/badge/made%20by-mgckaled-yellow">
+   </a>
+   <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/mgckaled/ignite-devia-machine_learning">
+   <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/mgckaled/ignite-devia-machine_learning">
 </div>
 
 ## Sumário
