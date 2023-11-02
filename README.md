@@ -2,6 +2,10 @@
 
 # Ignite Trilha Desenvovimento de IA - Aprendizado de Máquina
 
+<div>
+   <img alt="logo trilha" src=".github/assets/trilha-rs.png" width="30%"/>
+</div>
+
 ## Sumário
 
 - [Ignite Trilha Desenvovimento de IA - Aprendizado de Máquina](#ignite-trilha-desenvovimento-de-ia---aprendizado-de-máquina)
@@ -10,6 +14,9 @@
     - [Módulo 5: Fundamentos de Aprendizado de Máquina](#módulo-5-fundamentos-de-aprendizado-de-máquina)
     - [Módulo 6: Meu primeiro modelo com Scikit-Learn](#módulo-6-meu-primeiro-modelo-com-scikit-learn)
   - [Tecnologias](#tecnologias)
+    - [Linguagem de Programação](#linguagem-de-programação)
+    - [Gerenciadores de Ambiente Virtual](#gerenciadores-de-ambiente-virtual)
+    - [Principais Bibliotecas (Packages)](#principais-bibliotecas-packages)
   - [Licença](#licença)
 
 ## Sobre o Projeto
@@ -25,6 +32,22 @@ Com o intuito de consolidar e aplicar os conhecimentos adquiridos no módulo ant
 > Acessar [**anotações de aulas**](/.github/docs/notes.md).
 
 ## Tecnologias
+
+### Linguagem de Programação
+
+- [`python`](https://www.python.org/) (v3.11.3)
+
+### Gerenciadores de Ambiente Virtual
+
+- [`pyenv`](https://github.com/pyenv/pyenv)
+- [`pipenv`](https://pipenv.pypa.io/en/latest/)
+
+### Principais Bibliotecas (Packages)
+
+- [`pandas`](https://pandas.pydata.org/)
+- [`matplotlib`](https://matplotlib.org/)
+- [`seaborn`](https://seaborn.pydata.org/)
+- [`scikit-learn`](https://scikit-learn.org/stable/)
 
 ## Licença
 

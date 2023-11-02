@@ -1,9 +1,13 @@
 # Anotações
 
-> Voltar para o [README](../../README.md)
-
 ## Conteúdo
 
+### Módulo 5: Fundamentos de Aprendizado de Máquina
+
 - [Conceitos Básicos](./a_conceitos.md)
-- [Conceitos Básicos](./b_projetos-cotidiano.md)
+- [O cotidiano de projetos de IA/ML](./b_projetos-cotidiano.md)
 - [Tópicos Avançados](./c_avancado.md)
+
+### Módulo 6: Meu primeiro modelo com Scikit-Learn
+
+> Voltar para o [README](../../README.md)
