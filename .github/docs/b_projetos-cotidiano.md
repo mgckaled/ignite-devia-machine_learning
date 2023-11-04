@@ -23,6 +23,10 @@
     - [Conceito ChatGPT 3.5](#conceito-chatgpt-35-3)
   - [Validação de Modelos](#validação-de-modelos)
     - [Material](#material-4)
+      - [Grupos de Validação de Modelos](#grupos-de-validação-de-modelos)
+      - [Exemplos de Técnicas de Validação de Modelos](#exemplos-de-técnicas-de-validação-de-modelos)
+      - [Tipos de Métricas de Desempenho e de Negócios](#tipos-de-métricas-de-desempenho-e-de-negócios)
+      - [Questões não funcionais](#questões-não-funcionais)
     - [Conceito ChatGPT 3.5](#conceito-chatgpt-35-4)
 
 ## A maldição da dimensionalidade
@@ -110,6 +114,8 @@ A Engenharia de Features é uma parte crucial do ciclo de desenvolvimento de mod
 
 ### Material
 
+O *overfitting* e o *underfitting* são dois termos importantes no aprendizado supervisionado de machine learning. O *underfitting* ocorre quando o modelo é muito simples para aprender a relação entre as variáveis durante o treinamento, resultando em previsões imprecisas para novos dados. Já o *overfitting* ocorre quando o modelo se ajusta muito bem aos dados de treinamento, incluindo o ruído, mas não consegue generalizar para dados não vistos anteriormente. Existem técnicas para lidar com esses problemas, como a regularização, o uso de ensemble de modelos, a seleção de boas features e a redução da dimensionalidade dos dados. A validação cruzada também é uma técnica importante para evitar o *overfitting* e o *underfitting*.
+
 - *Ilustração:* conceitos e modelos clássicos *under*, *optimum* e *overfit*
 
 <div>
@@ -160,6 +166,12 @@ Em resumo, lidar com o overfitting envolve reduzir a complexidade do modelo e co
 
 ### Material
 
+O Trade-off entre viés e variância descreve a relação entre a capacidade de um modelo de aprender a partir de dados e sua capacidade de generalizar para dados novos
+
+- **Viés:** erro sistemático que um modelo comete ao aprender a partir de dados. Ele ocorre quando o modelo não é capaz de aprender a relação real entre as variáveis.
+
+- **Variância:** é a variabilidade dos resultados de um modelo ao ser aplicado diferentes conjusntos de dados. Ele ocorre quando o modelo é muito complexo ou quando os dados de treinamento são insuficientes.
+
 - *Ilustração*: combinações entre viés e variância
 
 <div>
@@ -174,13 +186,143 @@ Em resumo, lidar com o overfitting envolve reduzir a complexidade do modelo e co
 
 ### Conceito ChatGPT 3.5
 
+O trade-off entre viés e variância é um conceito fundamental no contexto de machine learning, e compreender esse equilíbrio é essencial para o desenvolvimento de modelos de aprendizado de máquina eficazes. Vamos explicar o que é viés e variância e como eles estão relacionados:
+
+1. Viés (Bias):
+   - O viés refere-se à simplificação excessiva de um modelo, resultando em suposições incorretas sobre os dados. Um modelo com alto viés tende a ser muito simplificado e subajustado aos dados de treinamento.
+   - Modelos com alto viés não conseguem capturar a complexidade dos dados e, portanto, têm um desempenho ruim tanto nos dados de treinamento quanto nos dados de teste. Isso é conhecido como underfitting.
+
+2. Variância (Variance):
+   - A variância é a sensibilidade de um modelo às flutuações nos dados de treinamento. Modelos com alta variância são muito sensíveis às variações nos dados de treinamento e podem se ajustar demais a esses dados.
+   - Modelos com alta variância geralmente têm um desempenho muito bom nos dados de treinamento, mas um desempenho ruim nos dados de teste, porque eles não conseguem generalizar bem para exemplos não vistos. Isso é conhecido como overfitting.
+
+O trade-off entre viés e variância pode ser resumido da seguinte forma:
+
+- Modelos com alto viés tendem a ser muito simples e não capturam a complexidade dos dados. Isso leva a um mau desempenho nos dados de treinamento e nos dados de teste.
+
+- Modelos com alta variância são muito complexos e se ajustam demais aos dados de treinamento, perdendo a capacidade de generalizar para novos dados.
+
+Para encontrar o equilíbrio adequado entre viés e variância, é necessário ajustar a complexidade do modelo. Alguns métodos para alcançar esse equilíbrio incluem:
+
+1. Ajustar a complexidade do modelo: Isso pode ser feito alterando hiperparâmetros, como o número de camadas e unidades em uma rede neural ou a profundidade de uma árvore de decisão.
+
+2. Usar validação cruzada: A validação cruzada permite avaliar o desempenho do modelo em diferentes divisões dos dados de treinamento e ajustar a complexidade com base nesses resultados.
+
+3. Coletar mais dados: Às vezes, o aumento do tamanho do conjunto de dados pode ajudar a reduzir a variância, permitindo que o modelo generalize melhor.
+
+4. Usar técnicas de regularização: Técnicas como regularização L1 e L2 podem ajudar a reduzir a variância, limitando os pesos do modelo.
+
+Em resumo, o trade-off entre viés e variância é um desafio comum em machine learning. Encontrar o equilíbrio certo é fundamental para criar modelos que se ajustem bem aos dados de treinamento e generalizem bem para novos dados.
+
 > [voltar](#sumário) para o topo.
 
 ## Validação de Modelos
 
 ### Material
 
+A validação de modelos serve para garantir que eles estejam performando de acordo com as expectativas dos usuários.
+
+#### Grupos de Validação de Modelos
+
+1) **Divisão de Conjunto de Dados (Supervisionado)**:
+   A divisão de conjunto de dados é uma das técnicas de validação mais simples e amplamente usadas em aprendizado supervisionado. Nessa abordagem, o conjunto de dados é dividido em pelo menos dois subconjuntos: um conjunto de treinamento e um conjunto de teste. O modelo é treinado no conjunto de treinamento e avaliado no conjunto de teste. Isso permite verificar como o modelo se comporta em dados que não foram usados para treinamento. A divisão de dados é uma maneira eficaz de avaliar o desempenho do modelo e detectar problemas como overfitting (ajuste excessivo) ou underfitting (ajuste insuficiente).
+
+2) **Métricas de Desempenho**:
+   As métricas de desempenho são usadas para quantificar o quão bem um modelo está executando em tarefas de machine learning. Elas fornecem medidas objetivas do desempenho do modelo, como precisão, recall, precisão, F1-score, AUC-ROC, erro quadrático médio, entre outras. A escolha das métricas de desempenho depende do tipo de problema (classificação, regressão, clustering) e das metas específicas do projeto. Métricas de desempenho ajudam a entender o quão bem o modelo está se saindo em termos de acurácia e eficácia em relação aos dados de teste.
+
+3) **Métricas de Negócio**:
+   Embora as métricas de desempenho forneçam informações importantes sobre o desempenho técnico de um modelo, as métricas de negócio são fundamentais para avaliar o impacto prático do modelo em um cenário de negócios ou aplicação. Essas métricas estão diretamente relacionadas aos objetivos de negócios, como lucro, economia de custos, satisfação do cliente, entre outros. As métricas de negócio são mais relevantes para as partes interessadas e ajudam a determinar se o uso do modelo é vantajoso do ponto de vista empresarial.
+
+4) **Questões Não Funcionais**:
+   As questões não funcionais envolvem aspectos que não estão diretamente relacionados ao desempenho ou métricas de negócio, mas que são igualmente importantes. Isso inclui questões éticas, legais, de privacidade e de segurança. Por exemplo, é importante garantir que o uso do modelo esteja em conformidade com regulamentos de proteção de dados, não viole a privacidade dos usuários e não perpetue vieses indesejados. Além disso, a segurança do modelo e dos dados deve ser considerada, especialmente em aplicações críticas.
+
+- *Ilustração:* grupos de validação de modelos
+
+<div>
+  <img src="../assets/images/m5_12.png" width="75%"/>
+</div>
+
+#### Exemplos de Técnicas de Validação de Modelos
+
+- *Ilustração:* técnica *Hold-out*
+
+<div>
+  <img src="../assets/images/m5_13.png" width="75%"/>
+</div>
+
+- *Ilustração:* técnica *K-fold*
+
+<div>
+  <img src="../assets/images/m5_14.png" width="75%"/>
+</div>
+
+- *Ilustração:* técnica *Stratified K-fold*
+
+<div>
+  <img src="../assets/images/m5_15.png" width="75%"/>
+</div>
+
+#### Tipos de Métricas de Desempenho e de Negócios
+
+Descrição e exemplos de [**métricas de desempenho**](./bi_performance-metrics.md).
+
+Descrição e exemplos de [**métricas de negócio**](./bii_business-metrics.md).
+
+- *Ilustração 1:* tipo de métricas de desempenho.
+
+<div>
+  <img src="../assets/images/m5_16.png" width="75%"/>
+</div>
+
+- *Ilustração 2:* tipo de métricas de Negócio.
+
+<div>
+  <img src="../assets/images/m5_17.png" width="75%"/>
+</div>
+
+#### Questões não funcionais
+
+Questões não funcionais são aspectos críticos a serem considerados ao validar modelos de machine learning, além do desempenho puramente preditivo. Aqui estão explicações para quatro dessas questões não funcionais no contexto da validação de modelos de machine learning:
+
+1) **Interpretabilidade**: refere-se à capacidade de entender e explicar o funcionamento de um modelo de machine learning. Modelos complexos, como redes neurais profundas, podem ser difíceis de interpretar, o que é um desafio em casos onde a transparência é crucial, como em aplicações médicas ou legais. A interpretabilidade permite que os usuários compreendam as decisões do modelo e confiem mais nele.
+
+2) **Fairness (Equidade):** A equidade é a preocupação de que os modelos de machine learning não reproduzam ou amplifiquem preconceitos existentes na sociedade. Isso significa que os modelos não devem fazer previsões discriminatórias com base em características protegidas, como raça, gênero, orientação sexual, etc. A validação de equidade envolve a detecção e mitigação de viés nos modelos, garantindo que eles tomem decisões justas para todos os grupos.
+
+3) **Eficiência:** está relacionada ao uso de recursos, como tempo e hardware, na implantação de um modelo de machine learning. Modelos muito complexos podem ser lentos ou exigir hardware caro. A validação de eficiência envolve otimizar modelos para que sejam executados rapidamente e com custos operacionais adequados. Isso é particularmente importante em sistemas de tempo real e em ambientes com recursos limitados.
+
+4) **Segurança:** refere-se à proteção dos modelos de machine learning contra ataques maliciosos, como ataques de adversários, envenenamento de dados ou exploração de vulnerabilidades. A validação de segurança envolve a identificação e mitigação de riscos de segurança, como o uso indevido do modelo ou a exposição a ameaças cibernéticas. Garantir a segurança do modelo é fundamental, especialmente em aplicações críticas, como sistemas de segurança e saúde.
+
+Cada uma dessas questões não funcionais desempenha um papel importante na validação de modelos de machine learning, garantindo que esses modelos sejam confiáveis, justos, eficientes e seguros em uma variedade de cenários de aplicação.
+
+- *Ilustração:* principais questões não funcionais.
+
+<div>
+  <img src="../assets/images/m5_18.png" width="75%"/>
+</div>
+
 ### Conceito ChatGPT 3.5
+
+A validação de modelo é uma parte fundamental do processo de desenvolvimento de modelos de machine learning. Ela envolve a avaliação do desempenho de um modelo para garantir que ele seja capaz de generalizar bem para dados não vistos. A validação de modelo ajuda a determinar quão bem um modelo se ajusta aos dados de treinamento e se é capaz de fazer previsões precisas em novos dados. Existem várias técnicas de validação de modelo que são comumente usadas, incluindo as seguintes:
+
+1. Divisão de dados (split de dados):
+   - Nessa técnica, o conjunto de dados é dividido em dois subconjuntos: um conjunto de treinamento e um conjunto de teste. O modelo é treinado no conjunto de treinamento e avaliado no conjunto de teste. Isso permite verificar como o modelo se sai em dados que não foram usados para treinamento.
+
+2. Validação cruzada (cross-validation):
+   - A validação cruzada é uma técnica mais avançada que divide o conjunto de dados em várias dobras (folds) e realiza múltiplas iterações de treinamento e teste. Por exemplo, na validação cruzada de k-fold, os dados são divididos em k subconjuntos (folds), e o modelo é treinado k vezes, cada vez usando k-1 folds como conjunto de treinamento e 1 fold como conjunto de teste. Isso ajuda a reduzir o viés na avaliação do modelo, fornecendo uma média das métricas de desempenho em diferentes subconjuntos de dados.
+
+3. Validade externa:
+   - Em alguns casos, é importante verificar o desempenho do modelo em um conjunto de dados totalmente diferente, que não tenha sido usado em nenhuma etapa do desenvolvimento do modelo. Isso ajuda a verificar se o modelo é capaz de generalizar bem para dados do mundo real.
+
+As métricas de avaliação comuns usadas na validação de modelo incluem:
+
+- Precisão (accuracy): Mede a proporção de previsões corretas feitas pelo modelo.
+- Recall (revocação): Mede a proporção de exemplos positivos que foram corretamente identificados pelo modelo.
+- Precisão (precision): Mede a proporção de exemplos identificados como positivos pelo modelo que são realmente positivos.
+- F1-score: Uma métrica que combina precisão e recall em uma única medida.
+- Área sob a curva ROC (AUC-ROC): Uma métrica que avalia o desempenho do modelo em problemas de classificação binária.
+- Erro quadrático médio (Mean Squared Error - MSE): Uma métrica comum para problemas de regressão que mede a média dos quadrados dos erros entre as previsões e os valores reais.
+
+A escolha da técnica de validação e das métricas de avaliação depende do tipo de problema que você está resolvendo e do conjunto de dados em questão. É importante realizar a validação do modelo de forma adequada para garantir que ele seja capaz de tomar decisões precisas e úteis em cenários do mundo real.
 
 > [voltar](#sumário) para o topo.
 >
