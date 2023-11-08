@@ -9,11 +9,10 @@
 <br>
 
 <div align="center">
-   <a href="https://github.com/mgckaled">
-      <img alt="Made by mgckaled" src="https://img.shields.io/badge/made%20by-mgckaled-yellow">
-   </a>
-   <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/mgckaled/ignite-devia-machine_learning">
-   <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/mgckaled/ignite-devia-machine_learning">
+  <img alt="Made by mgckaled" src="https://img.shields.io/badge/made%20by-mgckaled-darkblue">
+  <img alt="GitHub Repo Size" src="https://img.shields.io/github/repo-size/mgckaled/ignite-devia-machine_learning">
+  <img alt="GitHub Language Count" src="https://img.shields.io/github/languages/count/mgckaled/ignite-devia-machine_learning">
+  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
 </div>
 
 ## Sumário
@@ -27,9 +26,12 @@
     - [Linguagem de Programação](#linguagem-de-programação)
     - [Gerenciadores de Ambiente Virtual](#gerenciadores-de-ambiente-virtual)
     - [Principais Bibliotecas (Packages)](#principais-bibliotecas-packages)
+  - [Como clonar o projeto?](#como-clonar-o-projeto)
   - [Licença](#licença)
 
 ## Sobre o Projeto
+
+Repositório que reuni os módulos 5 e 6 da trilha Desenvolvimento IA 2023, desenvolvido pela Rocketseat Education.
 
 ### Módulo 5: Fundamentos de Aprendizado de Máquina
 
@@ -57,11 +59,35 @@ Com o intuito de consolidar e aplicar os conhecimentos adquiridos no módulo ant
 - [`pandas`](https://pandas.pydata.org/)
 - [`matplotlib`](https://matplotlib.org/)
 - [`seaborn`](https://seaborn.pydata.org/)
+- [`scipy`](https://scipy.org/)
 - [`scikit-learn`](https://scikit-learn.org/stable/)
+
+## Como clonar o projeto?
+
+1. Certifique-se de que está usando o `pyenv` e o `pipenv` para gerenciar as dependências do projeto. Veja como instalar e configurar clicando nos respectivos links do tópico [Gerenciadores de Ambiente Virtual](#gerenciadores-de-ambiente-virtual).
+
+2. Faça o clone pelo Github:
+
+    ```bash
+    git clone https://github.com/mgckaled/ignite-devia-machine_learning.git
+    ```
+
+3. Acesse o diretório:
+
+    ```bash
+    ignite-devia-machine_learning
+    ```
+
+4. Instale as dependências e ative o ambiente virtual
+
+    ```bash
+    pipenv install
+    pipenv shell
+    ```
 
 ## Licença
 
-Distribuído sob a licença *MIT*. Veja [LICENSE](LICENSE) para mais informações.  <img alt="License" src="https://img.shields.io/static/v1?label=license&message=MIT&color=49AA26&labelColor=000000">
+Distribuído sob a licença *MIT*. Veja [LICENSE](LICENSE) para mais informações.
 
 ---
 
