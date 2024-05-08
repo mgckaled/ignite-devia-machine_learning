@@ -1,6 +1,6 @@
 <!-- markdownlint-disable MD033 -->
 
-# Ignite Trilha Desenvovimento de IA - Aprendizado de Máquina
+# Formação Desenvovimento de IA - Aprendizado de Máquina
 
 <div align="center">
    <img alt="logo trilha" src=".github/assets/trilha-rs.png" width="30%"/>
@@ -17,7 +17,7 @@
 
 ## Sumário
 
-- [Ignite Trilha Desenvovimento de IA - Aprendizado de Máquina](#ignite-trilha-desenvovimento-de-ia---aprendizado-de-máquina)
+- [Formação Desenvovimento de IA - Aprendizado de Máquina](#formação-desenvovimento-de-ia---aprendizado-de-máquina)
   - [Sumário](#sumário)
   - [Sobre o Projeto](#sobre-o-projeto)
     - [Módulo 5: Fundamentos de Aprendizado de Máquina](#módulo-5-fundamentos-de-aprendizado-de-máquina)
@@ -31,7 +31,9 @@
 
 ## Sobre o Projeto
 
-Repositório que reuni os módulos 5 e 6 da trilha Desenvolvimento IA 2023, desenvolvido pela Rocketseat Education.
+Repositório que reuni os módulos 5 e 6 da formação Desenvolvimento IA 2023-2024, desenvolvido pela Rocketseat Education.
+
+> Acesso ao [conteúdo de aulas](/.github/docs/notes.md)
 
 ### Módulo 5: Fundamentos de Aprendizado de Máquina
 
@@ -40,8 +42,6 @@ O objetivo deste módulo é fornecer uma base sólida para todos aqueles que des
 ### Módulo 6: Meu primeiro modelo com Scikit-Learn
 
 Com o intuito de consolidar e aplicar os conhecimentos adquiridos no módulo anterior sobre fundamentos de machine learning, este módulo se concentra em uma abordagem prática, convidando os participantes a se envolverem diretamente no desenvolvimento de seu primeiro modelo de machine learning. O objetivo principal é promover uma compreensão mais profunda dos conceitos discutidos anteriormente, enquanto os alunos exploram a biblioteca Scikit-learn, uma ferramenta fundamental que será amplamente utilizada ao longo do curso. Durante este módulo, os participantes terão a oportunidade de criar e avaliar modelos de machine learning, aplicando os princípios aprendidos e desenvolvendo habilidades práticas essenciais para futuros projetos na área de aprendizado de máquina.
-
-> Acessar [**anotações de aulas**](/.github/docs/notes.md).
 
 ## Tecnologias
 
@@ -92,5 +92,5 @@ Distribuído sob a licença *MIT*. Veja [LICENSE](LICENSE) para mais informaçõ
 ---
 
 <h5 align="center">
-  2023 - <a href="https://github.com/mgckaled/">Marcel Kaled</a>
+  2023-2024 - <a href="https://github.com/mgckaled/">Marcel Kaled</a>
 </h5>
