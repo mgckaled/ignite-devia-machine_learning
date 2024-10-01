@@ -18,6 +18,9 @@
   - [Tipos de Algoritimo](#tipos-de-algoritimo)
     - [Material](#material-2)
     - [ChatGPT 3.5](#chatgpt-35-2)
+  - [O que é Overfitting](#o-que-é-overfitting)
+    - [Sinais de Overfitting:](#sinais-de-overfitting)
+    - [Como prevenir overfitting:](#como-prevenir-overfitting)
 
 ## O que é Aprendizado de Máquina?
 
@@ -157,6 +160,27 @@ Existem diversos algoritmos de Machine Learning, cada um projetado para abordar 
    - Exemplos incluem métodos de propagação de rótulos e autoencoders.
 
 Esses são apenas alguns exemplos de tipos de algoritmos de Machine Learning. A escolha do algoritmo depende da natureza da tarefa, dos dados disponíveis e dos objetivos específicos do projeto. À medida que a pesquisa em Machine Learning avança, novos algoritmos e técnicas continuam a ser desenvolvidos para lidar com uma ampla gama de desafios.
+
+> [voltar](#sumário) para o topo.
+
+## O que é Overfitting
+
+Overfitting é um problema comum em aprendizado de máquina onde um modelo se ajusta tão bem aos dados de treinamento que começa a capturar o "ruído" ou as variações irrelevantes dos dados, em vez de apenas as tendências gerais. Isso significa que o modelo funciona muito bem com os dados em que foi treinado, mas tem um desempenho ruim em novos dados, ou seja, não generaliza bem.
+
+Isso ocorre quando o modelo é muito complexo (por exemplo, tem muitos parâmetros ou camadas), e acaba aprendendo detalhes e padrões específicos dos dados de treinamento que não são representativos dos dados que encontrará no mundo real.
+
+### Sinais de Overfitting:
+
+1. **Alta acurácia no treinamento, baixa em validação/teste**: O modelo apresenta um excelente desempenho no conjunto de dados de treinamento, mas quando é avaliado em novos dados (conjunto de validação ou teste), seu desempenho cai drasticamente.
+2. **Modelo excessivamente complexo**: O modelo pode ter muitos parâmetros ou ser muito complexo para a quantidade de dados disponíveis, levando a um ajuste excessivo aos dados de treinamento.
+
+### Como prevenir overfitting:
+
+- **Cross-validation**: Dividir o conjunto de dados em várias partes e treinar o modelo em diferentes combinações dessas partes.
+- **Regularização**: Adicionar uma penalidade para a complexidade do modelo no processo de treinamento.
+- **Aumentar a quantidade de dados**: Treinar o modelo com mais dados para ajudar o modelo a capturar padrões mais gerais.
+- **Early stopping**: Parar o treinamento quando o desempenho no conjunto de validação começar a diminuir.
+- **Reduzir a complexidade do modelo**: Usar um modelo mais simples que seja menos propenso a capturar ruídos.
 
 > [voltar](#sumário) para o topo.
 >
