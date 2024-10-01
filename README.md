@@ -22,6 +22,7 @@
   - [Sobre o Projeto](#sobre-o-projeto)
     - [Módulo 5: Fundamentos de Aprendizado de Máquina](#módulo-5-fundamentos-de-aprendizado-de-máquina)
     - [Módulo 6: Meu primeiro modelo com Scikit-Learn](#módulo-6-meu-primeiro-modelo-com-scikit-learn)
+      - [Desafio](#desafio)
   - [Tecnologias](#tecnologias)
     - [Linguagem de Programação](#linguagem-de-programação)
     - [Gerenciadores de Ambiente Virtual](#gerenciadores-de-ambiente-virtual)
@@ -42,6 +43,12 @@ O objetivo deste módulo é fornecer uma base sólida para todos aqueles que des
 ### Módulo 6: Meu primeiro modelo com Scikit-Learn
 
 Com o intuito de consolidar e aplicar os conhecimentos adquiridos no módulo anterior sobre fundamentos de machine learning, este módulo se concentra em uma abordagem prática, convidando os participantes a se envolverem diretamente no desenvolvimento de seu primeiro modelo de machine learning. O objetivo principal é promover uma compreensão mais profunda dos conceitos discutidos anteriormente, enquanto os alunos exploram a biblioteca Scikit-learn, uma ferramenta fundamental que será amplamente utilizada ao longo do curso. Durante este módulo, os participantes terão a oportunidade de criar e avaliar modelos de machine learning, aplicando os princípios aprendidos e desenvolvendo habilidades práticas essenciais para futuros projetos na área de aprendizado de máquina.
+
+#### Desafio 
+
+[*Intruções do desafio*](https://efficient-sloth-d85.notion.site/Desafio-Meu-primeiro-modelo-com-Scikit-Learn-958dfc6c581142f9899c0e54e76135c8?pvs=4)
+
+[Desafio](./notebooks/challenge_sales.ipynb)
 
 ## Tecnologias
 
